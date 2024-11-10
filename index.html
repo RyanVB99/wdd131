@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Ryan Bodily</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ryan Bodily - Homepage">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>
+            WDD 131 - Dynamic Web Fundamentals - Ryan Bodily
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/ryan-bodily-854960208">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card-container">
+            <section class="card">
+                <div class="card-content">
+                    <h2>About Me</h2>
+                    <div class="text-image-container">
+                        <p>
+                            My name is Ryan Bodily. I grew up in Nampa, Idaho. I moved to New Zealand early last year.
+                            My family and I currently live in Hamilton, New Zealand. I am a student at Brigham Young
+                            University - Idaho.
+                            I am studying Web Design and Development. I am currently in my second block of classes.
+                            I enjoy watching movies with my friends and family. I also enjoy learning about photography,
+                            especially landscape photography, especially especially aerial photography.
+
+                            I am a member of The Church of Jesus Christ of Latter-day Saints. I served a mission in the
+                            Utah Salt Lake City South Mission from 2018 to 2020.
+
+                            I am currently interested in culinary arts. I am learning how to cook and bake. Specifically,
+                            I am learning about French full course meals. To date I have prepared 5 different full course
+                            meals ranging from 5 to 9 courses.
+                        </p>
+                        <img src="images/Cropped.webp" alt="Ryan Bodily">
+                    </div>
+                    <h3> Hamilton, New Zealand</h3>
+                    <div class="text-image-container">
+                        <img src="images/Takapuna.webp" alt="Hamilton, New Zealand">
+                        <p>
+                            Hamilton is a city in the North Island of New Zealand. It is the fourth most populous city
+                            in New Zealand.
+                            Hamilton is in the Waikato region of the North Island. It is situated on the banks of the
+                            Waikato River.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <div class="card-content">
+                    <h2>Web Dev Resources</h2>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                        <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                        <li><a href="https://www.codecademy.com/"> Code Academy</a> </li>
+                        <li><a href="https://roadmap.sh/"> Computer Science Roadmaps</a> </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span id="currentYear"></span>
+            Ryan Bodily
+            New Zealand
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
 </body>
+
 </html>

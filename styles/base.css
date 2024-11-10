@@ -1,0 +1,121 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1, footer {
+    background-color: steelblue;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+
+h1 {
+    font-size: 2em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0.5em;
+}
+
+footer {
+    font-size: 0.8em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    background-color: lightgray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    margin-top: 0;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    width: 33%;
+    margin: 0 auto;
+    padding: 0.5em;
+    text-decoration: underline;
+}
+
+nav {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0.5em;
+    border-bottom: 2px solid #000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 1em;
+    align-items: center;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    box-shadow: inset 0 -2px 0 0 steelblue;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em 0.1em lightgray;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    margin: 1em;
+    max-width: 80%;
+}
+
+.card p {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+
+
+.text-image-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.text-image-container img {
+    max-width: 150px;
+    height: auto;
+}
