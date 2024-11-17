@@ -1,11 +1,4 @@
 @media (min-width: 1000px) {
-    figure {
-        flex: 1 1 25%;
-    }
-
-    * {
-        font-family: "Montserrat", sans-serif;
-    }
 
     #menu {
         display: none;
@@ -35,22 +28,6 @@
     
     nav a:hover {
         color: steelblue;
-    }
-    
-    main {
-        display: grid;
-        justify-content: center;
-        width: 100%;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 30%));
-    }
-    
-    figure {
-        flex: 1 1 100%;
-        box-sizing: border-box;
-    }
-    
-    img {
-        max-width: 100%;
     }
     
 }
