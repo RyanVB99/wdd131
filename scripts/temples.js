@@ -2,6 +2,7 @@ const hamburgerMenu = document.querySelector('#menu');
 
 hamburgerMenu.addEventListener('click', function() {
     document.querySelector('nav').classList.toggle('show');
+    hamburgerMenu.classList.toggle('open');
 });
 
 document.addEventListener("DOMContentLoaded", function() {
