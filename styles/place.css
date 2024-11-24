@@ -86,7 +86,7 @@ section {
     font-weight: bold;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1279px) { .weather h2::after { content: none;} .weather h2 img { display: inline-block;}
     .wide-image {
         display: none;
     }
@@ -116,6 +116,17 @@ section {
 }
 
 @media (min-width: 1280px) {
+    .weather h2::after {
+        content: "☀️";
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 1.5rem;
+    }
+    
+    .weather h2 img {
+        display: none;
+    }
+
     .narrow-image {
         display: none;
     }
