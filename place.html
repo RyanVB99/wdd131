@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/place.css">
+    <script src="/scripts/place.js" defer></script>
+    <title>Ryan Bodily Country | WDD130</title>
+</head>
+
+<body>
+    <header>
+        <h1>New Zealand</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1280px)" srcset="/images/Takapuna.webp" type="image/webp">
+            <source media="(max-width: 1279px)" srcset="/images/Takapuna_small.webp" type="image/webp">
+            <img src="/images/Takapuna.webp" alt="New Zealand">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-grid">
+                <div class="label">Area:</div>
+                <div class="data">268.02 Km</div>
+                <div class="label">Population:</div>
+                <div class="data">5.12 Million</div>
+                <div class="label">Capital:</div>
+                <div class="data">Wellington</div>
+                <div class="label">Time Zone:</div>
+                <div class="data">UTC+13</div>
+                <div class="label">Language:</div>
+                <div class="data">English, Maori</div>
+                <div class="label">Currency:</div>
+                <div class="data">New Zealand Dollar</div>
+                <div class="label">Time Zone:</div>
+                <div class="data">UTC+13</div>
+                <div class="label">Calling Code:</div>
+                <div class="data">+64</div>
+                <div class="label">Internet TLD:</div>
+                <div class="data">.nz</div>
+            </div>
+        </section>
+        <section class = "weather">
+            <h2>Weather <img src="/images/sunny_icon.svg" alt="Sunny Icon" width="50" height="50"></h2>
+            <div class="data-grid">
+                <div class="label">Temperature:</div>
+                <div class="data" id="temperature">20<span>&deg;C</span></div>
+                <div class="label">Conditions:</div>
+                <div class="data">Sunny</div>
+                <div class="label">Wind:</div>
+                <div class="data" id="windSpeed">2<span> km/h</span></div>
+                <div class="label">Wind Chill:</div>
+                <div class="data" id="windChill"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span id="currentYear"></span>
+            Ryan Bodily
+            New Zealand
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

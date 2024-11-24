@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #004489;
+    --secondary-color: #dc002e;
+
+}
+
+
+* {
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 15px solid var(--secondary-color);
+    width: auto;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 960px;
+    position: relative;
+
+}
+
+picture {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 0;
+    position: relative;
+    left: -1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+section {
+    background-color: rgba(0, 68, 137, 0.9);
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.data {
+    align-self: flex-start;
+}
+
+.weather {
+    align-self: flex-end;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    padding: 20px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+@media (max-width: 1279px) {
+    .wide-image {
+        display: none;
+    }
+
+    * {
+        max-width: 300px;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    section {
+        order: 1;
+        position: relative;
+        z-index: 1;
+    }
+
+    picture {
+        order: 0;
+    }
+
+    .weather {
+        position: relative;
+    }
+}
+
+@media (min-width: 1280px) {
+    .narrow-image {
+        display: none;
+    }
+
+    section {
+        order: 0;
+        position: absolute;
+        z-index: 1;
+    }
+
+    picture {
+        order: 0;
+    }
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top: 15px solid var(--secondary-color);
+    width: auto;
+}
