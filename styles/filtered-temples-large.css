@@ -1,0 +1,33 @@
+@media (min-width: 1000px) {
+
+    #menu {
+        display: none;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav li {
+        list-style-type: none;
+        margin: 0 10px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    nav a:hover {
+        color: steelblue;
+    }
+    
+}
