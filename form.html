@@ -21,14 +21,15 @@
     <main>
         <h1>Product Review</h1>
         <form method="get" action="review.html">
+            <p>* indicates a required field</p>
             <fieldset class="required-container">
-                <legend>Product</legend>
+                <legend>Product *</legend>
                 <select name="Product" id="productSelect" class="input-validation" title="Select a product" required>
                     <option value="" disabled selected>Select One &#9662;</option>
                 </select>
             </fieldset>
             <fieldset class="required-container">
-                <legend>Overall Rating</legend>
+                <legend>Overall Rating *</legend>
                 <label><input type="radio" name="rating" value="1" class="input-validation-radio" required>&star;</label>
                 <label><input type="radio" name="rating" value="2" class="input-validation-radio" required>&star;&star;</label>
                 <label><input type="radio" name="rating" value="3" class="input-validation-radio" required>&star;&star;&star;</label>
@@ -36,7 +37,7 @@
                 <label><input type="radio" name="rating" value="5" class="input-validation-radio" required>&star;&star;&star;&star;&star;</label>
             </fieldset>
             <fieldset class="required-container">
-                <legend>Date of Installation</legend>
+                <legend>Date of Installation *</legend>
                 <input type="date" name="installDate" class="input-validation" title="installDate" required>
             </fieldset>
             <fieldset>

@@ -1,0 +1,11 @@
+<body>
+    <div>
+        <p>You have completed <span id="reviewCount">0</span> reviews.</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reviewCount = localStorage.getItem('reviewCount') || 0;
+            document.getElementById('reviewCount').textContent = reviewCount;
+        });
+    </script>
+</body>
