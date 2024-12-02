@@ -41,10 +41,12 @@ const populateProductSelect = function () {
     });
 };
 
-const incrementReviewCounter = function () {
+const incrementReviewCounter = function (event) {
+    event.preventDefault();
     let reviewCount = localStorage.getItem('reviewCount');
     reviewCount = reviewCount ? parseInt(reviewCount) + 1 : 1;
     localStorage.setItem('reviewCount', reviewCount);
+    window.location.href = 'review.html';
 };
 
 document.addEventListener('DOMContentLoaded', () => {
