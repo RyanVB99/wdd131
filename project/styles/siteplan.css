@@ -1,0 +1,36 @@
+/* styles/siteplan.css */
+:root {
+    --background-color: #FDF8F4;
+    --font-color: #2E2B26;
+    --accent-color: #76441b;
+    --secondary-color: #E5C49B;
+    --button-border-color: #A67C52;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Italiana', serif;
+    color: var(--accent-color);
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
