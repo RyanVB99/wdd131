@@ -1,7 +1,6 @@
 /* styles/siteplan.css */
 :root {
-    --background-color: #FDF8F4;
-    --font-color: #2E2B26;
+    --background-color: #EDE0D4;
     --accent-color: #76441b;
     --secondary-color: #E5C49B;
     --button-border-color: #A67C52;
@@ -33,4 +32,43 @@ main {
 
 ul li {
     margin-bottom: 0.5rem;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.background-color-box {
+    background-color: var(--background-color);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+}
+
+.font-color-box {
+    background-color: var(--font-color);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+}
+
+.accent-color-box {
+    background-color: var(--accent-color);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+}
+
+.secondary-color-box {
+    background-color: var(--secondary-color);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
 }
