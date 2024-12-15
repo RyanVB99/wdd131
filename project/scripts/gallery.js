@@ -34,9 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    loadImages();
-
     document.getElementById('filter-wide').addEventListener('click', () => {
+        loadImages();
         const images = container.querySelectorAll('img');
         images.forEach(img => {
             img.style.display = img.naturalWidth > img.naturalHeight ? 'block' : 'none';
@@ -44,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('filter-tall').addEventListener('click', () => {
+        loadImages();
         const images = container.querySelectorAll('img');
         images.forEach(img => {
             img.style.display = img.naturalWidth < img.naturalHeight ? 'block' : 'none';
