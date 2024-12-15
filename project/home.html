@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Bodily">
+    <meta name="description" content="Home page for the project">
+    <link rel="stylesheet" href="styles/PerTe.css">
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="siteplan.html">
+                <img src="images/logo.webp" alt="Logo" class="logo" loading="lazy">
+            </a>
+            <button id="menu-button" aria-label="Toggle navigation">
+                <span class="menu-icon"></span>
+            </button>
+            <ul id="nav-links" class="hidden">
+                <li><h3><a href="#">Home</a></h3></li>
+                <li><h3><a href="recipes.html">Recipes</a></h3></li>
+                <li><h3><a href="gallery.html">Gallery</a></h3></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome</h2>
+            <img src="images/PlaceSetting.webp" alt="Fruit Platter" class="hero-image">
+        </section>
+        <section class="link-cards">
+            <div class="card">
+                <h2>Discover Recipes</h2>
+                <a href="recipes.html">
+                    <img src="images/FruitPlatter.webp" alt="Fruit Platter" class="recipes-image" loading="lazy">
+                </a>
+            </div>
+            <div class="card">
+                <h2>Explore the Gallery</h2>
+                <a href="gallery.html">
+                    <img src="images/HorsDouevreClose.webp" alt="Hors D'oeuvre Close Up" class="gallery-image" loading="lazy">
+                </a>
+            </div>
+        </section>
+        <section class="about">
+            <h2>About Us</h2>
+            <div class="about-container">
+                <p>My name is Ryan Bodily, and I am a dedicated student at Brigham Young University (BYU). I have a passion for cooking and savoring fancy meals, which has led me to explore the culinary arts in depth. Cooking is not just a hobby for me; it's a way to express creativity and bring joy to others through delicious and beautifully presented dishes.</p>
+                <img src="images/logo.webp" alt="Logo" class="about-logo" width="500" height="500">
+                <p>In addition to my love for cooking, I am also deeply interested in programming. I am currently studying programming at BYU, where I am learning to develop dynamic and interactive web applications. My goal is to combine my culinary skills with my programming knowledge to create innovative solutions in the food industry, such as recipe websites, cooking apps, and more.</p>
+                <p>Through my studies and personal projects, I am constantly seeking to improve my skills and stay updated with the latest trends in both the culinary and tech worlds. I believe that the fusion of these two passions can lead to exciting and impactful innovations. Thank you for visiting my website, and I hope you enjoy exploring the recipes and galleries as much as I enjoyed creating them.</p>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <form method="get">
+            <p>* indicates a required field</p>
+            <fieldset>
+                <legend>Your Name (optional)</legend>
+                <label>
+                    <input type="text" name="fname" placeholder="Enter your first name">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Phone Number (optional)</legend>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+            </fieldset>
+            <fieldset>
+                <legend>Your Email (optional)</legend>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Question, Comment, Concern?</legend>
+                <textarea name="review" rows="4" cols="50" placeholder="Write your message here"></textarea>
+            </fieldset>
+            <input type="submit" value="Send message">
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="home.html">
+                <img src="images/logo.webp" alt="Logo" class="footer-logo footer-logo-common" loading="lazy" width="50" height="50">
+            </a>
+            <p>&copy; 2024 Ryan Bodily | All Rights Reserved</p>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                <img src="images/igLogo.webp" alt="Instagram" class="footer-instagram footer-logo-common" loading="lazy" width="50" height="50">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

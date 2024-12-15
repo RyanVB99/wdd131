@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Bodily">
+    <meta name="description" content="Gallery of meals and recipes">
+    <link rel="stylesheet" href="styles/PerTe.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/gallery.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto&display=swap" rel="stylesheet">
+    <title>Gallery</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="home.html">
+            <img src="images/logo.webp" alt="Logo" class="logo" loading="lazy">
+        </a>
+        <button id="menu-button" aria-label="Toggle navigation">
+            <span class="menu-icon"></span>
+        </button>
+        <ul id="nav-links" class="hidden">
+            <li><h3><a href="home.html">Home</a></h3></li>
+            <li><h3><a href="recipes.html">Recipes</a></h3></li>
+            <li><h3><a href="#">Gallery</a></h3></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <h2> Photos </h2>
+        <div class="filter-buttons">
+            <button id="filter-wide">Show Landscape Images</button>
+            <button id="filter-tall">Show Portrait Images</button>
+            <button id="filter-all">Show All Images</button>
+        </div>
+        <div id="photos">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a href="home.html">
+                <img src="images/logo.webp" alt="Logo" class="footer-logo footer-logo-common" loading="lazy" width="50" height="50">
+            </a>
+            <p>&copy; 2024 Ryan Bodily | All Rights Reserved</p>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                <img src="images/igLogo.webp" alt="Instagram" class="footer-instagram footer-logo-common" loading="lazy" width="50" height="50">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
