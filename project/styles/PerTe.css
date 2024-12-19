@@ -15,7 +15,6 @@
     --header-color-dark: #ffffff;
 }
 
-
 body {
     background-color: var(--background-color);
     color: var(--font-color);

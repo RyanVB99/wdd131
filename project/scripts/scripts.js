@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Menu button clicked');
         navLinks.classList.toggle('active');
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
