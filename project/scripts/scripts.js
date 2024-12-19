@@ -1,14 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
+const toggleMenu = function () {
     const menuButton = document.getElementById('menu-button');
     const navLinks = document.getElementById('nav-links');
 
-    console.log('Document is ready');
-
     menuButton.addEventListener('click', () => {
-        console.log('Menu button clicked');
         navLinks.classList.toggle('active');
     });
+};
 
+const toggleTheme = function () {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
@@ -30,5 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('theme', 'light');
         }
     });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    toggleMenu();
+    toggleTheme();
 });
 
