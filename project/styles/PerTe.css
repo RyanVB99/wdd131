@@ -5,7 +5,16 @@
     --secondary-color: #474448;
     --font-color: #3a3439;
     --header-color: #2D232E;
+
+    /* Dark Colors */
+    --background-color-dark: #1e1e1e;
+    --form-background-color-dark: #333333;
+    --accent-color-dark: #444444;
+    --secondary-color-dark: #bbbbbb;
+    --font-color-dark: #f5f5f5;
+    --header-color-dark: #ffffff;
 }
+
 
 body {
     background-color: var(--background-color);
@@ -303,3 +312,52 @@ footer {
 main, footer {
     margin-top: 0;
 }
+
+/* Dark Variations */
+body.dark-theme {
+    background-color: var(--background-color-dark);
+    color: var(--font-color-dark);
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3 {
+    color: var(--header-color-dark);
+}
+
+body.dark-theme nav {
+    background-color: var(--background-color-dark);
+}
+
+body.dark-theme .card, 
+body.dark-theme .recipe-card {
+    background-color: var(--accent-color-dark);
+    border-color: var(--secondary-color-dark);
+}
+
+body.dark-theme #contact-us form {
+    background-color: var(--form-background-color-dark);
+    border-color: var(--secondary-color-dark);
+}
+
+body.dark-theme #contact-us input[type="submit"] {
+    background-color: var(--secondary-color-dark);
+    color: var(--font-color-dark);
+}
+
+.dark-theme .logo {
+    background-color: var(--background-color);
+    border-radius: 50%;
+    padding: 15px;
+    display: inline-block;
+}
+
+body.dark-theme nav ul li a, 
+body.dark-theme nav ul li h3 a {
+    color: var(--font-color-dark);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+
